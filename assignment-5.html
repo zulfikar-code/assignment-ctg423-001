@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Assignment</title>
+	<!-- link main Style Sheet -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	
+</head>
+<body>
+	
+<!-- Navigation Menu Starts here -->
+	 <div class="menumain">
+	 	<ul>
+			<li>
+	 			<div class="ass1" for="home"><a href="index.html" id=home>Home</a></div>
+	 		</li>
+	 		<li>
+	 			<div class="ass1"><a href="assignment-1.html">Assignment-1</a></div>
+	 		</li>
+	 		<li>
+	 			<div class="ass1"><a href="assignment-2.html">Assignment-2</a></div>
+	 		</li>
+	 		<li>
+	 			<div class="ass1"><a href="assignment-3.html">Assignment-3</a></div>
+	 		</li>
+	 		<li>
+	 			<div class="ass1"><a href="assignment-4.html">Assignment-4</a></div>
+	 		</li>
+	 		<li>
+	 			<div class="ass1active"><a href="assignment-5.html">Assignment-5</a></div>
+	 		</li>
+	 		<li>
+	 			<div class="ass1"><a href="assignment-5.html">Assignment-5</a></div>
+	 		</li>
+	 	</ul>
+	 
+	</div>
+
+<!-- Assignment-1 Starts here -->
+
+	<div class="contain-ass-5">
+			<input type="text" class="user-name" placeholder="User Name" >
+			<p id="name"></p>
+			<input type="text" class="email" placeholder="Email Address" >
+			<p id="email"></p>
+			<input type="text" class="contact" placeholder="Contact Number" >
+			<p id="contact"></p>
+			<input type="date" class="dob" placeholder="Your Birth Date" >
+			<p id="dob"></p>
+			<input type="password" class="password" placeholder="Password" >
+			<p id="password"></p>
+			<button type="submit">Sign Up</button>
+		
+				
+	</div>
+
+		
+	 		<!-- JQuery Libs -->
+		<script src="assets/js/jquery-3.5.1.min.js"></script>
+		<script>
+			$('button').click(function(){
+			if($('input.user-name').val()==""){
+				$('#name').html('<span style="color:red;">*Name Required</span>');
+			}else{
+				$('#name').html('');
+				}			
+			});
+		</script>
+	 
+</body>
+</html>
