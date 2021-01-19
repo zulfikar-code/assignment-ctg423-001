@@ -75,7 +75,7 @@
 									if (score>=0 && score<=32) {
 										
 										
-										$('.report').html(score+'<h2 style="color:red; font-size:30px;">Sorry! You have Failed</h2><button type="button" href="#" style="font-size:20px; border: 2px solid rgb(194, 226, 1,.7); outline: none; border-radius: 5px; cursor: pointer; margin-top:20px; background-color: rgb(214, 245, 82,.4); padding: 5px 10px;  border-radus:5px;">Apply for retake</button>');
+										$('.report').html('<h2 style="color:red; font-size:30px;">Sorry! You have Failed</h2><button type="button" href="#" style="font-size:20px; border: 2px solid rgb(194, 226, 1,.7); outline: none; border-radius: 5px; cursor: pointer; margin-top:20px; background-color: rgb(214, 245, 82,.4); padding: 5px 10px;  border-radus:5px;">Apply for retake</button>');
 									}else if (score>=33 && score<=39) {
 											
 											$('.report').html('<h2 style="color:green;">Ohh Allah you survived!</h2><br><h3 style="color:red; font-size:30px">Your grade is-D</h3>');
@@ -94,7 +94,11 @@
 									}else if (score>=80 && score<=100) {
 											
 											$('.report').html('<h2 style="color:green;">Congratulations...., you are Boss!</h2><br><h3 style="color:goldenrod; font-size:30px">Your grade is-A+</h3>');
-									}else {
+									}else if (score =='') {
+										$('.report').html('<h2 style="color:red; text-decoration:underline">Are you out of your Mind!</h2><br><h3 style="color:red; font-size:30px">Check your Input</h3>');
+										
+									}
+									else {
 											$('.report').html('<h2 style="color:red; text-decoration:underline">Are you out of your Mind!</h2><br><h3 style="color:red; font-size:30px">Check your Input</h3>');	
 									}
 										
