@@ -61,7 +61,12 @@
 		<script src="assets/js/jquery-3.5.1.min.js"></script>
 		<script>
 			$('button').click(function(){
-			if($('input.user-name').val()==""){
+
+				let userVal= $('input.user-name').val();
+			if(userVal==""){
+
+				$('.user-name').css('border-color','red');
+
 				$('#name').html('<span style="color:red;">*Name Required</span>');
 			}else{
 				$('#name').html('');
